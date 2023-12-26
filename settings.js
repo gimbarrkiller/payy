@@ -8,8 +8,8 @@ window.settings = {
     version: "v4",
     portal: "5BAE2814BB16ED0AA4A146AA4A4E168D",
   },
-  baseUrl: "pages-mmc", // настройка указывает роутеру location в конфиге nginx
-  //redirectTimeout: 10, // Автоматический редирект по backUrl на странице результатов
+  baseUrl: "pages-fns", // настройка указывает роутеру location в конфиге nginx
+  // redirectTimeout: 10, // Автоматический редирект по backUrl на странице результатов
   localization: {
     defaultLang: "ru",
     allowedLanguages: ["ru", "en"],
@@ -26,7 +26,6 @@ window.settings = {
     },
   ],
   qrCodeSize: 182, //default 256
-  mirPayDesktopShow: false,
   googlePay: {
     // googlePayEnvironment: 'PRODUCTION', // default is 'TEST'
     //googlePayRequestType: 'DIRECT', // default is 'PAYMENT_GATEWAY'. DIRECT используется до версии PGA 4.2.10
@@ -38,5 +37,5 @@ window.settings = {
   applePay: {
     applePayEnabled: false, // отключает--включает applePay
   },
-  mirPayResetTimer: 5, // При mirPay перезапрос статуса через mirPayResetTimer секунд на проверку успешного платежа.
+  mirPayResetTimer: 10, // При mirPay перезапрос статуса через mirPayResetTimer секунд на проверку успешного платежа.
 };
