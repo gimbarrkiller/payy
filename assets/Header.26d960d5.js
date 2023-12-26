@@ -1,0 +1,1 @@
+import{_ as o}from"./gazprombank_ru.80efb3f5.js";import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";import{o as s,b as t,e}from"./gpb-fns.1cc41912.js";const a={},_={class:"header-wrapper"},c=e("header",null,[e("img",{src:o,alt:"logo"})],-1),n=[c];function d(i,m){return s(),t("div",_,n)}var h=r(a,[["render",d]]);export{h as default};

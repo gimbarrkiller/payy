@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as r,b as t,t as a}from"./gpb-fns.1cc41912.js";const s={},c={class:"loader"};function n(o,_){return r(),t("div",c,a(o.$t("loading")),1)}var l=e(s,[["render",n]]);export{l as default};

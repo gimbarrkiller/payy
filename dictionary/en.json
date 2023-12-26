@@ -1,23 +1,21 @@
 {
-  "loading": { "title": "Processing request", "subTitle": "Wait, please" },
+  "loading": {
+    "title": "Processing request",
+    "subTitle": "Wait, please"
+  },
   "tabTitle": {
     "offer": "Enter card details",
-    "bill": {
-      "pay": "Payment result",
-      "transfer": "Transfer result",
-      "registration": "Registration result"
-    },
+    "bill": "Payment result",
     "processing": "Request processing",
     "default": "Payment processing"
   },
+  "currency": "rub.",
   "ui": {
     "input": {
       "pan": { "label": "Card number" },
-      "expiry": { "label": "MM / YY" },
-      "expiryMonth": { "label": "MM", "mobileLabel": "Expiry date" },
-      "expiryYear": { "label": "YY" },
-      "cvc": { "label": "CVV" },
-      "saveCard": { "label": "remember card" }
+      "expiry": { "label": "Expiry date" },
+      "cvc": { "label": "CVC2/CVV2" },
+      "saveCard": { "label": "Remember my card" }
     },
     "btn": {
       "pay": "Pay Now",
@@ -40,11 +38,12 @@
         "transferToCard": "Transfer to the card",
         "transferToAccount": "Transfer to account"
       },
-      "sbpTitle": "Pay by other method",
+      "sbpTitle": "Pay with any card via Gazprom Pay",
+      "purchaseAmount": "Amount:",
       "commission": {
-        "amount": "Amount:",
-        "commission": "Commission:",
-        "fullAmount": "Amount with commission:"
+        "commission": "сommission",
+        "fullAmount": "amount with commission",
+        "withoutCommission": "No commission"
       },
       "cvcDescription": "3 digits from revers side of the card",
       "saveCardInfo": "After entering the card details, will be performed a verification authorization for the amount of {0}. This amount will not be charged to your card.",
@@ -58,7 +57,8 @@
         "mirPayTextStart": "missing from the device",
         "mirPayTextEnd": " to complete the payment",
         "mirPayUrl": "install it",
-        "mirPayBtn": "Return to merchant"
+        "mirPayBtn": "Cancel",
+        "mirPayAcceptBtn": "Pay Now"
       }
     },
     "sbp": {
@@ -77,39 +77,39 @@
     },
     "result": {
       "status": {
-        "success": "Payment complete successfully",
+        "success": "Tax paid",
         "transferSuccess": "Transfer complete successfully",
         "registration": "Registration completed successfully",
         "failedRegistration": "Registration failed",
-        "interim_success": "Payment complete successfully",
+        "interim_success": "Tax paid",
         "suspended": "Operation not completed",
         "failed": "Payment failed",
         "transferFailed": "Transfer failed",
         "unknown": "Operation not completed"
       },
       "description": {
-        "success": "",
+        "success": "The payment receipt has been sent to the taxpayer's personal account",
         "suspended": "Specify the operation result at Customer Support Service.",
         "interim_success": ""
       },
       "offline": "<b class=\"red\">Attention!</b> Unable to register payment in merchant during on-line transaction. Your payment will be registered later in off-line mode.",
       "table": {
-        "merchant": "Merchant",
-        "description": "Description",
-        "pan": "Card number",
-        "brand": "Card type",
-        "trxId": "Transaction ID",
+        "merchant": "Source:",
+        "description": "Description:",
+        "pan": "Card number:",
+        "brand": "Card type:",
+        "trxId": "Transaction ID:",
         "externalTrxId": {
           "sbp": "Transaction ID in SBP Pay",
           "gazprom_pay": "Payment ID in Gazprom Pay",
           "card": "Additional ID"
         },
-        "date": "Date/Time",
-        "approvalCode": "Authorization code",
-        "rrn": "RRN",
-        "amount": "Amount",
-        "commission": "Commission",
-        "fullAmount": "Amount with commission"
+        "date": "Date/Time:",
+        "approvalCode": "Authorization code:",
+        "rrn": "RRN:",
+        "amount": "Amount:",
+        "commission": "Commission:",
+        "fullAmount": "Amount with commission:"
       },
       "readMore": "Read more"
     },
@@ -119,35 +119,37 @@
         "description": "The server encountered unforeseen errors while transaction processing. Please, try to pay later.",
         "btn": "Return to merchant"
       }
-    },
-    "merchantUrlPrefix": "payment in "
+    }
   },
   "footer": {
-    "info": "Data transfer over the Internet is secured by TLS protocol. {0} Data are protected according to international standard PCI DSS.",
+    "lock": "All rights reserved.",
+    "info": "Data transfer over the Internet is secured by TLS protocol. Data are protected according to international standard PCI DSS.",
     "bank": "© 1990-{0}, GPB Bank (JSC). General license of the Bank of Russia No. 354."
   },
   "receiptArea": {
-    "titleText": "Additional service. Provided by GPB Bank (JSC) free of charge",
+    "formTitle": "Send check to e-mail",
+    "additional_service": "Additional service. Provided by GPB Bank (JSC) free of charge.",
+    "emailFormTitle": "Enter e-mail:",
     "phoneTitle": "Mobile phone:",
     "emailTitle": "Send check to e-mail:",
-    "emailFormTitle": "Send check to e-mail:",
     "successSendEmail": "Check successfully sent to e-mail",
     "agree_get_receipt": "Get a payment receipt",
-    "agree_data_processing": "I give my consent to {0}",
-    "agree_data_processing_word": "processing of personal data",
+    "agree_data_processing": "I give my consent to processing {0}",
+    "agree_data_processing_word": "of personal data",
     "agree_advertising": "I agree to receive information about special offers on products and services from Bank GPB (JSC)",
     "btn_send_receipt": "Get receipt",
     "btn_send_email_receipt": "Send",
-    "btn_view_receipt": "View",
+    "btn_view_receipt": "Print",
     "btn_save_receipt": "Save pdf",
-    "finish_title": "Receipt sent to your e-mail",
+    "finish_title": "Receipt sent",
     "finish_description": "You can also save the receipt in pdf or send it to print.",
     "agree_modal_content": {
-      "title": "Consent to data processing",
+      "title": "Consent",
       "description": {
         "personal_data_list_title": "I, a citizen of the Russian Federation, acting by my will and in my interest, give my consent to Bank GPB (JSC): location: 117420, Moscow, st. Nametkina, house 16, building 1, for the processing of my personal data in order to analyze my needs for obtaining banking products / financial services and send me personal offers on products and services by phone and e-mail, namely:",
         "personal_data_list": [
           "— verification and processing, including collection, recording, systematization, accumulation, storage, clarification (updating, changing), extraction, use, transfer (provision, access), blocking, deletion, destruction of my personal data (hereinafter referred to as the processing of personal data) reported by me when applying for receipt of the Receipt, with the use of automation tools and/or without the use of such tools;",
+          "— receiving information about me in electronic form from the Pension Fund of the Russian Federation on wages, other payments and remuneration;",
           "— transfer (provision, access) of the phone number specified in the application for receipt of the Receipt (hereinafter referred to as the contact phone number): to telecom operators: Beeline (PJSC VimpelCom, location: 127083, Moscow, 10 Marta st., building 8) .14), MegaFon (PJSC MegaFon, location: 127006, Moscow, Oruzheyny per., 41), (hereinafter referred to as the Telecom Operator);",
           "— receiving from the Telecommunications Operators: information about me as a subscriber of the Telecommunications Operators, including (but not limited to) the following information: subscriber number, e-mail address, information about the communication services provided by the Telecommunications Operators and payments for these services under the contracts concluded by me with the Telecommunications Operators for provision of communication services (hereinafter referred to as Subscriber Information);",
           "— transfer of a contact phone number and information about the subscriber received from the Telecom Operators: To the companies: Mail.ru (LLC Mail.Ru, location: 125167, Leningradsky Prospekt, 39, building 79), JSC \"MBKI\" (location: 127006, Moscow, st. location: 115280, Moscow, Leninskaya Sloboda st., 19), ZAO OKB (location: 127006, Moscow, 1st Tverskaya-Yamskaya st., 2, building 1) JSC Renaissance Insurance Group (location: 115114, Derbenevskaya embankment, 7, building 22, floor/room 4/XIII);",
@@ -155,11 +157,41 @@
           "— collection, recording, systematization, accumulation, storage, clarification (updating, changing), extraction, use, blocking, deletion, destruction of my personal data received by the Bank from Telecom Operators and Companies"
         ],
         "agreements_text": [
-          "The moment of granting this consent is the moment of putting a mark in the checkbox (putting a check mark) opposite the phrase “I agree to the processing of personal data”.",
           "Consent is valid for 5 years from the date of its granting. I am hereby informed about the possibility of revoking the Consent by submitting an application to the Bank's office in a simple written form, and that after receiving my application for revoking the Consent, the Bank has the right to continue processing my personal data only on the grounds provided for by the current legislation of the Russian Federation.",
           "I am aware that the personal offer sent to me is not an offer of the Bank to conclude an agreement with me to provide me with a banking product/financial service. The Bank makes the final decision on concluding an agreement with me on its own and after I submit a set of documents in accordance with the procedure established by the Bank.",
-          "By providing this consent, I confirm that I am responsible for the accuracy and validity of the personal data provided by me, and also confirm that I understand the meaning of all the terms listed in this consent and their compliance with the Federal Law of July 27, 2006 No. 152-ФЗ “On Personal Data » and the Federal Law of March 13, 2006 N 38-FZ \"On Advertising\" and my right to withdraw this consent."
+          "GPB Bank (JSC). General license of the Bank of Russia No. 354."
         ]
+      }
+    },
+    "receipt_example_content": {
+      "info": "To receive the service, you must enter a email address to which a link to the receipt will be sent and provide consent in accordance with federal laws No. 38-FZ \"On Advertising\" and No. 152-FZ \"On Personal Data\". Contact information can be used by GPB Bank (JSC) to send offers on the bank's products and services.",
+      "caption": "Receipt example:",
+      "table_header": "Tax paid",
+      "table": [
+        { "key": "Portal:", "value": "Name of company" },
+        { "key": "Description:", "value": "Description of payment purpose" },
+        {
+          "key": "Card number:",
+          "value": "0000 0000 0000 0000",
+          "class": "pan"
+        },
+        { "key": "Card type:", "value": "Visa" },
+        { "key": "Transaction ID:", "value": "ON5W1KJSJ9" },
+        { "key": "Date/time:", "value": "01.01.2021 00:00" },
+        { "key": "Authorization code:", "value": "000000" },
+        { "key": "RRN", "value": "00000000000" },
+        { "key": "Amount", "value": "0,00 руб", "class": "amount" }
+      ],
+      "detailed_description": {
+        "title": "Payment Description",
+        "amount": "Amount",
+        "value": "00,00 руб"
+      },
+      "footer_description": {
+        "text": "To revoke consent, you can submit an appeal through the feedback form on the website of Bank GPB (JSC) - {0}. For more information about the procedure for withdrawing consents, please contact:",
+        "link": "www.gazprombank.ru/feedback",
+        "mobile_operator": "*0701 - For subscribers: MTS, Beeline, Megafon, TELE2, MOTIV, Tinkoff mobile, GPB Mobile.",
+        "city_phone": "8-800-100-0701 - Free for all Russian cities."
       }
     }
   },
@@ -197,14 +229,18 @@
     "app": {
       "validation": {
         "required": "Please, fill missed field",
-        "pan": "Check card number",
+        "requiredMsisdn": "Enter phone number",
+        "requiredEmail": "Enter e-mail",
+        "requiredCheckbox": "This field is required",
+        "pan": "Invalid card number",
         "expiryMonth": "Month between 01 and 12",
         "expiryMonthCard": "Invalid month",
         "expiryYear": "Invalid year",
         "length": "Enter {number} digits",
+        "panLength": "Please enter at least {number} digits",
         "latin": "Only Latin characters are supported",
-        "phoneNumber": "Check phone number",
-        "email": "Check e-mail"
+        "phoneNumber": "Invalid phone number",
+        "email": "Invalid email format"
       }
     }
   }
