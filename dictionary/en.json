@@ -27,7 +27,10 @@
       "transferToAccount": "Transfer",
       "checkResult": "Check Result",
       "accept": "Accept",
-      "reject": "Reject"
+      "reject": "Reject",
+      "phonePay": "Pay by phone number",
+      "back": "Back",
+      "sendMsisdn": "Send"
     }
   },
   "pages": {
@@ -60,12 +63,6 @@
         "mirPayBtn": "Cancel",
         "mirPayAcceptBtn": "Pay Now"
       }
-    },
-    "sbp": {
-      "sbpSubtitle": "Scan and pay",
-      "pressQr": "Click on the QR code",
-      "sbpInfoDesk": "Scan the QR code via your bank's mobile application. Then click the \"Check Result\" button to get the payment result.",
-      "sbpInfoMobile": "Scan the QR code via your bank's mobile application or click on it. Then click the \"Check Result\" button to get the payment result."
     },
     "offer": {
       "titleTreeDSInfo": "Follow these steps to confirm",
@@ -193,6 +190,47 @@
         "mobile_operator": "*0701 - For subscribers: MTS, Beeline, Megafon, TELE2, MOTIV, Tinkoff mobile, GPB Mobile.",
         "city_phone": "8-800-100-0701 - Free for all Russian cities."
       }
+    }
+  },
+  "sberPay": {
+    "qr": {
+      "title": "Scan the QR code to pay for your order",
+      "text": "To pay, use the code scanner in the Sberbank application."
+    },
+    "form": {
+      "title": "SberPay",
+      "text": "For payment, we will send a push notification to your phone number",
+      "msg": {
+        "success": "Wait for PUSH on your mobile device",
+        "failed": "Unable to send PUSH"
+      }
+    },
+    "paymentExpiry": "Pay within",
+    "phoneLabel": "Mobile phone",
+    "sberPayAppModal": {
+      "sberPayTopText": {
+        "failed": "If the mobile app",
+        "success": "Complete the payment"
+      },
+      "sberPayTextStart": {
+        "failed": "missing from the device",
+        "success": "in the mobile application and wait for the result"
+      },
+      "sberPayUrl": "install it",
+      "sberPayTextEnd": "to complete the payment",
+      "sberPayBtn": "Back"
+    },
+    "errorMsg": {
+      "title": "Payment via SberPay is temporarily unavailable.",
+      "backBtnText": "Pay using another method"
+    }
+  },
+  "sbp": {
+    "title": "Scan and pay",
+    "pressQr": "Click on the QR code",
+    "errorMsg": {
+      "title": "Payment via SBP is temporarily unavailable.",
+      "backBtnText": "Pay using another method"
     }
   },
   "errors": {

@@ -1,41 +1,50 @@
 window.settings = {
-  cardRegistrationPage: false, //Если включина тогда это страница для регистрации карты
-  handleGlobalKeydownEnter: true, //Если включина тогда можно проходить формы через enter
-  noSizeIframe: true, //Игнорируются размеры iframe присланные PGA
+  cardRegistrationPage: false,
+  handleGlobalKeydownEnter: true,
+  noSizeIframe: true,
   isToggleButtonEnabled: false,
   openApi: {
-    baseUrl: "https://lt.pga.gazprombank.ru/api",
+    baseUrl: "https://www.pga.gazprombank.ru/api",
     version: "v4",
-    portal: "5BAE2814BB16ED0AA4A146AA4A4E168D",
+    portal: "4246218C81AF2F5E6DF9742C494ADF22"
   },
-  baseUrl: "pages-fns", // настройка указывает роутеру location в конфиге nginx
-  // redirectTimeout: 10, // Автоматический редирект по backUrl на странице результатов
+  baseUrl: "pages-mmc-tm",
+  // redirectTimeout: 10,
   localization: {
-    defaultLang: "ru",
-    allowedLanguages: ["ru", "en"],
+    defaultLang: 'ru',
+    allowedLanguages: ['ru', 'en'],
   },
-  "3ds2": {
+  '3ds2': {
     supported: true,
-    versions: ["2.1.0", "2.2.0"],
-    browserJsDisabled: "2.2.0",
+    versions: ['2.1.0', '2.2.0'],
+    browserJsDisabled: '2.2.0',
   },
   requestCancellation: [
     {
       timeout: 100000,
-      matchUrls: ["/3ds2-prepare/accept"],
+      matchUrls: ['/3ds2-prepare/accept'],
     },
   ],
-  qrCodeSize: 182, //default 256
+  qrCodeSize: 182,
   googlePay: {
-    // googlePayEnvironment: 'PRODUCTION', // default is 'TEST'
-    //googlePayRequestType: 'DIRECT', // default is 'PAYMENT_GATEWAY'. DIRECT используется до версии PGA 4.2.10
+    // googlePayEnvironment: 'PRODUCTION',
+    //googlePayRequestType: 'DIRECT',
     // googlePayAllowedCardNetworks: ['AMEX', 'DISCOVER', 'INTERAC', 'JCB', 'MASTERCARD', 'VISA'],
     // googlePayAllowedCardAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
-    gpay: false, //отключает google pay
+    gpay: false,
   },
-  stateInProgress: "no",
+  stateInProgress: 'no',
   applePay: {
-    applePayEnabled: false, // отключает--включает applePay
+    applePayEnabled: false,
   },
-  mirPayResetTimer: 10, // При mirPay перезапрос статуса через mirPayResetTimer секунд на проверку успешного платежа.
+  mirPayResetTimer: 5,
+  gppLabel: false /* {
+    startDate: '2023-09-29',
+    endDate: '2023-09-30',
+    position: 'top-left',
+  } */,
+  expandMerchantInfo: true,
+  saveReceiptDefault: false,
+  expandableBillDetail: false,
+  enableSaveCard: true,
 };

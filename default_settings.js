@@ -36,4 +36,6 @@ window.settings = {
     applePayEnabled: true, // отключает--включает applePay
   },
   mirPayResetTimer: 10, // При mirPay перезапрос статуса через mirPayResetTimer секунд на проверку успешного платежа.
+  fetchCheckSberPaymentStateInterval: 10, // Интервал времени в секундах на перезапрос статуса при платеже СберПэй
+  fetchCheckSbpPaymentStateInterval: 10, // Интервал времени в секундах на перезапрос статуса при платеже СБП
 };
